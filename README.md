@@ -8,7 +8,7 @@ Content of the package
 
 This package provides a new annotations reader in order to be able to read Doctrine's Annotations in a Mouf project.
 
-The installer is based on pure PHP code (as you can see in the AnnotationReaderInstaller setCode() function), and it does two things : 
+The installer is based on pure PHP code (as you can see in the AnnotationReaderInstaller `setCode()` function), and it does two things : 
 
 -   register a new loader (so that we can use the composer autoloader, located in `vendor/autoload.php`).
 -   create a new AnnotationReader (use to parse every annotations in the code).

@@ -1,7 +1,7 @@
 utils.common.doctrine-annotations-wrapper
 =========================================
 
-Provide an install script for a Doctrine's AnnotationReader in Mouf Framework.
+Provides an install script for Doctrine's AnnotationReader in Mouf Framework.
 
 Content of the package
 ----------------------

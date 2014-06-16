@@ -29,7 +29,7 @@ Doctrine\\Common\\Annotations\\AnnotationRegistry::registerLoader(array($loader,
 
 // Creating a new AnnotationReader
 $reader = new Doctrine\\Common\\Annotations\\AnnotationReader();
-return new Doctrine\\Common\\Annotations\\CachedReader($reader, new Doctrine\\Common\\Cache\\ArrayCache());');
+return new Doctrine\\Common\\Annotations\\CachedReader($reader, $container->get("defaultDoctrineCache"));');
 
 		// Let's rewrite the MoufComponents.php file to save the component
 		$moufManager->rewriteMouf();

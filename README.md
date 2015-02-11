@@ -1,5 +1,5 @@
 Doctrine's Annotations for Mouf framework
-==============================================
+=========================================
 
 Provides an install script for Doctrine's AnnotationReader in Mouf Framework.
 
@@ -21,4 +21,4 @@ Installation
 
 To install the package, just add its latest version to your composer.json (see the package in the [packagist website](https://packagist.org/packages/mouf/utils.common.doctrine-annotations-wrapper)) adn run the `php composer.phar update`.
 
-Then in Mouf validation process, a new task should be marked as **To run**, launch the installation process and you will have your `annoationReander` instance ready to use !
+Then in Mouf validation process, a new task should be marked as **To run**, launch the installation process and you will have your `annotationReader` instance ready to use!

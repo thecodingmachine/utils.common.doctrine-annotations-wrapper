@@ -25,11 +25,11 @@ class AnnotationReaderInstaller implements PackageInstallerInterface {
 		$annotationReader = InstallUtils::getOrCreateInstance('annotationReader', null, $moufManager);
 		$annotationReader->setCode('// Using composer autoloader
 $loader = require ROOT_PATH . \'vendor/autoload.php\';
-Doctrine\\Common\\Annotations\\AnnotationRegistry::registerLoader(array($loader, \'loadClass\'));
+\\Doctrine\\Common\\Annotations\\AnnotationRegistry::registerLoader(array($loader, \'loadClass\'));
 
 // Creating a new AnnotationReader
-$reader = new Doctrine\\Common\\Annotations\\AnnotationReader();
-return new Doctrine\\Common\\Annotations\\CachedReader($reader, $container->get("defaultDoctrineCache"));');
+$reader = new \\Doctrine\\Common\\Annotations\\AnnotationReader();
+return new \\Doctrine\\Common\\Annotations\\CachedReader($reader, $container->get("defaultDoctrineCache"));');
 
 		// Let's rewrite the MoufComponents.php file to save the component
 		$moufManager->rewriteMouf();
